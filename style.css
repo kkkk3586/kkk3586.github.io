@@ -45,7 +45,7 @@ img {
 }
 
 .intro-section {
-  min-height: 100vh;
+  min-height: 95vh;
   display: grid;
   place-items: center;
   padding: 3rem 1.5rem;
@@ -53,12 +53,12 @@ img {
 }
 
 .intro-card {
-  max-width: 740px;
+ 
   padding: 3rem 2rem;
-  background: rgba(255, 255, 255, 0.04);
+  
   border: none;
   border-radius: 32px;
-  box-shadow: 0 40px 120px rgba(31, 23, 78, 0.25);
+  
 }
 
 .intro-quote {

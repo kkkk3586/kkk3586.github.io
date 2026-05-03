@@ -212,19 +212,12 @@ main {
   justify-content: center;
 }
 
-.profile-placeholder {
+.profile-image {
   width: min(280px, 100%);
-  aspect-ratio: 1 / 1;
+  height: min(280px, 100%);
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(140, 92, 255, 0.4), rgba(32, 22, 74, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  object-fit: cover;
   box-shadow: 0 20px 90px rgba(80, 33, 175, 0.2);
-  display: grid;
-  place-items: center;
-  color: var(--text);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
 }
 
 .section-panel {

@@ -16,4 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  const updateParallax = () => {
+    const offset = Math.min(window.scrollY * -0.24, 220);
+    document.body.style.setProperty('--parallax-offset', `${offset}px`);
+  };
+
+  updateParallax();
+  window.addEventListener('scroll', updateParallax, { passive: true });
 });

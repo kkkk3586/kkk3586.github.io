@@ -20,9 +20,42 @@ html {
 body {
   margin: 0;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  background: radial-gradient(ellipse at top, rgba(139, 93, 255, 0.18), transparent 25%),
-    linear-gradient(180deg, #09070f 0%, #0a0913 100%);
+  background: #06060a;
   color: var(--text);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -10% 0 auto 0;
+  height: 120vh;
+  z-index: -2;
+  background-image:
+   url("https://static.wixstatic.com/media/eba9d0_190c4322ee714a90aff9a24c32f05aa6~mv2.jpg/v1/fill/w_1398,h_1593,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/eba9d0_190c4322ee714a90aff9a24c32f05aa6~mv2.jpg");
+  background-position: center 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translate3d(0, var(--parallax-offset, -220px), 0);
+  filter: brightness(0.85) saturate(0.8) contrast(1.1);
+  will-change: transform;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at top, rgba(139, 93, 255, 0.18), transparent 28%);
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 
 .intro-quote {

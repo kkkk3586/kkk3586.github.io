@@ -98,7 +98,7 @@ img {
   font-size: clamp(3rem, 6vw, 6rem);
   letter-spacing: -0.05em;
   line-height: 0.95;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--text);
   opacity: 0;
   animation-name: fadeIn;
@@ -143,7 +143,7 @@ img {
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 0;
   text-transform: lowercase;
   color: rgb(255,255,255);
   text-decoration: none;

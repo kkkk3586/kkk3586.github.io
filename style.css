@@ -207,8 +207,9 @@ main {
 .banner-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: flex-start;
+  margin-left:5vw;
+  margin-right:auto;
   flex-wrap: wrap;
 }
 
@@ -220,7 +221,9 @@ main {
   border: 3px solid rgb(255, 255, 255);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.05);
-  box-align: left;
+  margin: 0;
+  margin-right: auto;
+  align-self: flex-start;
 }
 
 .banner-image {

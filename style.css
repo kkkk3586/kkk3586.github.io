@@ -90,7 +90,9 @@ img {
   
   border: none;
   border-radius: 32px;
-  
+  transform-origin:center;
+  transform: scale(1); 
+  transition: transform 0.3s ease; 
 }
 
 .intro-quote {
@@ -198,18 +200,23 @@ main {
 
 .banner-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
-  align-items: center;
   margin-bottom: 2.5rem;
+  width:100vw;
+  
 }
 
 .banner-left {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 1.5rem;
   align-items: flex-start;
-  margin-left:5vw;
-  margin-right:auto;
+}
+
+.banner-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
@@ -222,8 +229,11 @@ main {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.05);
   margin: 0;
-  margin-right: auto;
-  align-self: flex-start;
+}
+
+.code-snippet {
+  flex: 1;
+  min-width: 280px;
 }
 
 .banner-image {
@@ -258,31 +268,42 @@ main {
   font-size: clamp(3.5rem, 7vw, 7rem);
   line-height: 0.95;
   letter-spacing: 0em;
+  text-align: left;
   color: var(--text);
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-style: italic;
+  align-self:flex-start;
 }
 
 .code-snippet {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0,0,0,0);
+  border: 1px solid rgba(0,0,0,0);
   padding: 1.5rem;
   border-radius: 24px;
   overflow: auto;
+  text-align:left;
+  color: var(--text);
+  font-size:1rem;
 }
 
 .code-snippet pre {
   margin: 0;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace;
+  font-family: ui-monospace, 'Fira Mono', monospace;
   color: #f0f0f0;
   line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
   white-space: pre-wrap;
 }
 
 .code-snippet code {
+  font-family: ui-monospace, 'Fira Mono', monospace;
+  color: #f0f0f0;
+  font-weight: 400;
+  font-style: normal;
   display: block;
-  color: var(--muted);
+  
 }
 
 .hero-content {
@@ -315,7 +336,8 @@ main {
 .email,
 .hero-description {
   margin: 0;
-  color: var(--muted);
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255,255,255);
   line-height: 1.7;
 }
 
@@ -479,4 +501,10 @@ main {
   .experience-item {
     grid-template-columns: 1fr;
   }
+}
+
+.footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

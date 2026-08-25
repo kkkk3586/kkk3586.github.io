@@ -3,3 +3,4 @@ Part of "hecker's site" on https://k36669.wixsite.com/hk01 except it's completel
 ## Features
 - faster loading times
 - less ads
+- Supports older browsers (though only text loads)

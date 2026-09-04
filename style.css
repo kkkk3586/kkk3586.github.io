@@ -34,7 +34,7 @@ body::before {
   height: 120vh;
   z-index: -2;
   background-image:
-   url("https://static.wixstatic.com/media/eba9d0_190c4322ee714a90aff9a24c32f05aa6~mv2.jpg/v1/fill/w_1905,h_1593,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/eba9d0_190c4322ee714a90aff9a24c32f05aa6~mv2.jpg");
+   url("images/bg.png");
   background-position: center 15%;
   background-size: cover;
   background-repeat: no-repeat;
